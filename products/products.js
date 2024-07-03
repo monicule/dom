@@ -1,7 +1,12 @@
 // <button type="button">Click me</button>
 
-const formDOM = document.getElementsByTagName('form')[0];
-formDOM.innerHTML = '<button type="button">Click me</button>';
+const allFormsDOM = document.getElementsByTagName('form');
+
+const formDOM1 = allFormsDOM[0];
+formDOM1.innerHTML += '<button type="button">Click me</button>';
+
+const formDOM2 = allFormsDOM[1];
+formDOM2.innerHTML += '<button type="button">Click me 2</button>';
 
 const contentDOM = document.getElementById('content');
 const ulDOM = contentDOM.querySelector('.products-list');
@@ -45,3 +50,16 @@ for (let i = 0; i < products.length; i++) {
 }
 
 ulDOM.innerHTML = HTML;
+
+
+const allParsDOM = document.querySelectorAll('main > p');
+console.log(allParsDOM);
+
+allParsDOM[1].innerText = allParsDOM[1].innerText.toUpperCase();
+
+const redElementsDOM = document.querySelectorAll('.red');
+
+for (const redDOM of redElementsDOM) {
+    redDOM.style.backgroundColor = 'red';
+    redDOM.style.fontSize = '2rem';
+}
