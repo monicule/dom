@@ -1,3 +1,5 @@
+import { header } from "../js/header.js";
+
 const h1DOM = document.getElementById('title');
 console.log(h1DOM);
 
@@ -44,4 +46,8 @@ console.log(totalLiDomination2);
 const darzasDOM = document
     .getElementById('darzas')
     .querySelectorAll('.pomidoras > li');
-console.log(pomidoroVaikaiDOM);
+console.log(darzasDOM);
+
+// ------------------
+
+header();
