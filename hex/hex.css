@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hexContainer {
+    background-color: #005490;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.hex {
+    font-size: 25px;
+    border: 1px solid white;
+    padding: 5px 10px;
+}
+
+hr {
+    width: 100%;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    border: none;
+}
